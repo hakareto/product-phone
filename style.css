@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0 ;
+    background-color: rgb(113, 113, 113);
+
+}
+h1{
+    box-shadow: 2px 2px 1.5px 1.5px rgb(0, 0, 0) , -2px -2px 1px 1px blue;
+    animation :desha 5s infinite alternate linear ;
+
+}
+@keyframes desha{
+    25%{
+        color: rgb(184, 141, 0);
+    }
+    50%{
+        color: rgb(0, 0, 0);
+    }
+    75%{
+        color: rgb(255, 0, 212);
+    }
+    100%{
+        color: rgb(123, 255, 0);
+    }
+}
+section{
+    display: flex;
+    padding:25px 30px;
+
+}
+section form{
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    background-color: rgb(62, 126, 222);
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    
+    
+}
+section input{
+    height: 30px;
+    border: none;
+    border: 1px solid black;
+    font-size: 18px;
+    font-style: italic;
+    padding:  10px;
+    font-family: sans-serif;
+    background-color: rgb(204, 199, 199);
+    color: black;
+}
+section label{
+    font-size: 19px;
+    font-weight: bold;
+    font-style: italic;
+}
+section button{
+    width: max-content;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 19px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    
+}
+table{
+    width: 75%;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+}
+table *{
+    padding: 10px;
+}
+table thead{
+    background-color: rgb(83, 156, 252);
+    font-weight: bold;
+    font-size: 19px;
+}
+table tbody{
+    background-color: rgb(169, 199, 224);
+    font-size: 15px;
+    font-weight: 700;
+
+}
+table button{
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(3, 6, 7);
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    color: aliceblue;
+}
+table button:hover{
+    border: 1px solid black;
+    background-color: gold;
+    color: black;
+    border-radius: 12px;
+
+
+
+}
+table button.del:hover{
+    background-color: red;
+
+}
+
+
+button#deleteAll{
+    width: 20%;
+    padding: 15px 10px;    
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 1.5px 1.5px rgb(232, 8, 8) , -2px -2px 1px 1px blue;
+    color: white;
+    font-size: 20px;
+    transition: 1s;
+}
+button#deleteAll:hover{
+    transform: scale(1.1);
+    background-color: aliceblue;
+    color: black;
+
+}
